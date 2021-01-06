@@ -44,7 +44,7 @@ export default class WelcomeScreen extends Component{
          email_id:this.state.emailId,
          address:this.state.address
        })
-       return  Alert.alert(
+       return  alert(
             'User Added Successfully',
             '',
             [
@@ -69,7 +69,7 @@ userLogin = (emailId, password)=>{
    .catch((error)=> {
      var errorCode = error.code;
      var errorMessage = error.message;
-     return Alert.alert(errorMessage)
+     return alert(errorMessage)
    })
  }
 
